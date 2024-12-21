@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Interactive Quiz Application</h1>
+        </header>
+        <div class="info-section">
+            <h2>Enter Your Details</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="roll-id">Roll ID:</label>
+            <input type="text" id="roll-id" placeholder="Enter your roll ID" required>
+        </div>
+      <div class="quiz-board">
+            <div class="quiz-header">
+                <div class="timer" id="timer">Time Left: 05:00</div>
+            </div>
+            <div id="quiz">
+                <div class="question" id="question"></div>
+                <ul class="options" id="options"></ul>
+            </div>
+            <div class="controls">
+                <button id="prev-btn" disabled>Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+        <div id="submit-section" style="display: none;">
+            <button id="submit-btn">Submit</button>
+        </div>
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
